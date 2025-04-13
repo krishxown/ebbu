@@ -18,7 +18,7 @@ const timelineEvents = [
     title: "The Birth of a Legend",
     description: "East Bengal Club was founded on August 1, 1920, in Kolkata, India.",
     slug: "birth-of-legend-1920",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/images/team-photo-white.png",
   },
   {
     id: "2",
@@ -34,7 +34,7 @@ const timelineEvents = [
     title: "The Rivalry Years: 1970s",
     description: "The decade that saw the Kolkata Derby reach new heights of intensity and passion.",
     slug: "rivalry-years-1970s",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/images/team-lineup.png",
   },
   {
     id: "4",
@@ -50,7 +50,7 @@ const timelineEvents = [
     title: "Barreto to Baichung: Forward Legends",
     description: "The era of legendary strikers who became icons of Indian football.",
     slug: "forward-legends-1990s",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/images/player-with-trophy-sitting.png",
   },
   {
     id: "6",
@@ -59,7 +59,7 @@ const timelineEvents = [
     description:
       "East Bengal became the first Indian club to win an international tournament in the post-independence era.",
     slug: "asean-championship-2003",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/images/player-with-trophy.png",
   },
   {
     id: "7",
@@ -67,7 +67,7 @@ const timelineEvents = [
     title: "ISL Era Begins",
     description: "East Bengal joined the Indian Super League, beginning a new chapter in the club's storied history.",
     slug: "isl-era-begins-2020",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/images/press-conference.png",
   },
 ]
 
@@ -216,7 +216,26 @@ export default function HistoryPage() {
                 >
                   <div className="p-4">
                     <div className="relative h-32 w-32 mx-auto rounded-full overflow-hidden mb-4">
-                      <Image src={legend.image || "/placeholder.svg"} alt={legend.name} fill className="object-cover" />
+                      <Image
+                        src={
+                          legend.id === "1"
+                            ? "/images/player-dribbling.png"
+                            : legend.id === "2"
+                              ? "/images/match-action.png"
+                              : legend.id === "3"
+                                ? "/images/aerial-duel.png"
+                                : legend.id === "4"
+                                  ? "/images/player-with-trophy-sitting.png"
+                                  : legend.id === "5"
+                                    ? "/images/team-photo-field.png"
+                                    : legend.id === "6"
+                                      ? "/images/player-with-trophy.png"
+                                      : legend.image || "/placeholder.svg"
+                        }
+                        alt={legend.name}
+                        fill
+                        className="object-cover"
+                      />
                     </div>
                     <h3 className="text-lg font-bold">{legend.name}</h3>
                     <p className="text-gray-600">{legend.position}</p>

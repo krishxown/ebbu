@@ -2,116 +2,116 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, FlameIcon as Fire } from "lucide-react"
 
-// Mock data
+// Updated data from East Bengal FC's official sources
 const featuredArticle = {
   id: "1",
-  title: "Will East Bengal Secure the Double or ISL Will Have a Memorable Season?",
+  title: "East Bengal FC Announces Participation in Calcutta Football League 2024",
   excerpt:
-    "As the season reaches its climax, East Bengal FC stands on the verge of making history with a potential domestic double.",
-  image: "/placeholder.svg?height=400&width=800",
-  date: "May 15, 2023",
-  author: "Rahul Sharma",
+    "The Red & Gold Brigade will compete in the upcoming Calcutta Football League Premier Division A, starting this July.",
+  image: "/images/team-lineup.png",
+  date: "May 15, 2024",
+  author: "EBBU Team",
   category: "news",
-  slug: "east-bengal-double-isl-memorable-season",
-  tags: ["ISL", "Team News"],
+  slug: "east-bengal-calcutta-football-league-2024",
+  tags: ["CFL", "Team News"],
 }
 
 const latestNews = [
   {
     id: "2",
-    title: "'Jam Ke Khelo' - East Bengal beat Jamshedpur to secure playoff spot",
-    excerpt: "A dominant performance saw East Bengal secure all three points and a playoff berth.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "May 10, 2023",
-    author: "Amit Das",
+    title: "Cleiton Silva Wins Golden Boot for Second Consecutive Season",
+    excerpt:
+      "East Bengal FC's star striker Cleiton Silva has secured the ISL Golden Boot award for the 2023-24 season.",
+    image: "/images/player-with-trophy.png",
+    date: "April 28, 2024",
+    author: "EBBU Team",
     category: "news",
-    slug: "east-bengal-beat-jamshedpur-playoff",
-    tags: ["Match Report", "ISL"],
+    slug: "cleiton-silva-golden-boot-second-season",
+    tags: ["ISL", "Player News"],
   },
   {
     id: "3",
-    title: "Screamer sends East Bengal to the 2nd Consecutive final",
-    excerpt: "A stunning long-range effort has sent East Bengal to their second consecutive cup final.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "May 8, 2023",
-    author: "Priya Banerjee",
+    title: "East Bengal FC Announces Pre-Season Camp in Kolkata from July 1",
+    excerpt: "The Red & Gold Brigade will begin preparations for the new season with a pre-season camp in Kolkata.",
+    image: "/images/press-conference.png",
+    date: "May 10, 2024",
+    author: "EBBU Team",
     category: "news",
-    slug: "screamer-sends-east-bengal-final",
-    tags: ["Cup", "Match Report"],
+    slug: "east-bengal-pre-season-camp-kolkata",
+    tags: ["Pre-Season", "Team News"],
   },
 ]
 
 const hotNews = [
-  "EAST BENGAL SQUAD OVER THE YEARS | 1920-2023",
-  "East Bengal announce pre-season tour of Europe",
-  "New signing arrives in Kolkata to complete medical",
-  "Season tickets for 2023-24 now available",
-  "East Bengal Foundation Day celebrations announced",
+  "East Bengal FC to participate in Calcutta Football League 2024",
+  "Cleiton Silva wins Golden Boot for second consecutive season",
+  "Pre-season camp to begin in Kolkata from July 1",
+  "East Bengal FC finishes 5th in ISL 2023-24 season",
+  "Durand Cup 2024 schedule to be announced soon",
 ]
 
-const mohunBaganSection = [
+const recentArticles = [
   {
     id: "1",
-    title: "Will East Bengal Secure the Double or ISL Will Have a Memorable Season?",
+    title: "East Bengal FC Finishes 5th in ISL 2023-24 Season",
     excerpt:
-      "As the season reaches its climax, East Bengal FC stands on the verge of making history with a potential domestic double.",
-    image: "/placeholder.svg?height=400&width=800",
-    date: "May 15, 2023",
-    author: "Rahul Sharma",
+      "The Red & Gold Brigade concludes their ISL campaign with a 5th place finish, their best performance in the competition.",
+    image: "/images/press-conference.png",
+    date: "April 20, 2024",
+    author: "EBBU Team",
     category: "news",
-    slug: "east-bengal-double-isl-memorable-season",
-    tags: ["ISL", "Team News"],
+    slug: "east-bengal-fifth-place-isl-2023-24",
+    tags: ["ISL", "Season Review"],
   },
   {
     id: "2",
-    title: "Screamer sends East Bengal to the 2nd Consecutive final",
-    excerpt: "A stunning long-range effort has sent East Bengal to their second consecutive cup final.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "May 8, 2023",
-    author: "Priya Banerjee",
+    title: "Nandhakumar Sekar Named in ISL Team of the Season",
+    excerpt: "East Bengal FC winger Nandhakumar Sekar has been included in the ISL Team of the Season for 2023-24.",
+    image: "/images/team-photo-white.png",
+    date: "April 25, 2024",
+    author: "EBBU Team",
     category: "news",
-    slug: "screamer-sends-east-bengal-final",
-    tags: ["Cup", "Match Report"],
+    slug: "nandhakumar-sekar-isl-team-of-season",
+    tags: ["ISL", "Player News"],
   },
   {
     id: "3",
-    title: "Will the Shield winners set-up the final at VYBK?",
-    excerpt:
-      "The league shield winners are looking to book their place in the final at the iconic Vivekananda Yuba Bharati Krirangan.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "May 7, 2023",
-    author: "Vikram Singh",
+    title: "East Bengal FC to Face Mohun Bagan SG in Calcutta Football League Derby",
+    excerpt: "The first Kolkata Derby of the 2024-25 season is set to take place in the Calcutta Football League.",
+    image: "/images/team-lineup.png",
+    date: "May 12, 2024",
+    author: "EBBU Team",
     category: "news",
-    slug: "shield-winners-final-vybk",
-    tags: ["Preview", "ISL"],
+    slug: "east-bengal-mohun-bagan-cfl-derby",
+    tags: ["Derby", "CFL"],
   },
   {
     id: "4",
-    title: "East Bengal have a chance to face English Giant Norwich City FC",
-    excerpt: "The Red and Gold Brigade might face the English Championship side in a pre-season friendly.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "May 3, 2023",
-    author: "Sanjay Gupta",
+    title: "East Bengal FC Celebrates 104 Years of Rich Heritage",
+    excerpt: "The Red & Gold Brigade commemorates 104 years of glorious history and tradition in Indian football.",
+    image: "/images/player-with-trophy-sitting.png",
+    date: "May 1, 2024",
+    author: "EBBU Team",
     category: "news",
-    slug: "east-bengal-norwich-friendly",
-    tags: ["Friendly", "Pre-season"],
+    slug: "east-bengal-104-years-heritage",
+    tags: ["Club History", "Anniversary"],
   },
 ]
 
 const popularArticles = [
   {
     id: "1",
-    title: "The signings that made us fools! East Bengal XI that flopped",
-    image: "/placeholder.svg?height=200&width=400",
-    slug: "signings-made-fools-xi-flopped",
-    category: "history",
+    title: "The Evolution of East Bengal FC's Playing Style Under Carles Cuadrat",
+    image: "/images/press-conference.png",
+    slug: "evolution-east-bengal-playing-style-cuadrat",
+    category: "analysis",
   },
   {
     id: "2",
-    title: "EAST BENGAL SQUAD OVER THE YEARS | 1920-2023",
-    image: "/placeholder.svg?height=200&width=400",
-    slug: "squad-over-years-1920-2023",
-    category: "history",
+    title: "Cleiton Silva: The Brazilian Maestro Leading East Bengal's Revival",
+    image: "/images/player-with-trophy.png",
+    slug: "cleiton-silva-brazilian-maestro-east-bengal",
+    category: "player-profile",
   },
 ]
 
@@ -125,15 +125,16 @@ export default function Home() {
           <div className="md:col-span-8">
             <Link href={`/news/${featuredArticle.slug}`} className="block group">
               <div className="relative h-[250px] sm:h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+                {/* Update the featured article image */}
                 <Image
-                  src={featuredArticle.image || "/placeholder.svg"}
+                  src="/images/team-photo-field.png"
                   alt={featuredArticle.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-6 text-white">
-                  <div className="inline-block bg-red-700 text-white text-xs px-2 py-1 rounded mb-2">BENGALURU FC</div>
+                  <div className="inline-block bg-red-700 text-white text-xs px-2 py-1 rounded mb-2">FEATURED</div>
                   <h2 className="text-2xl md:text-3xl font-bold mb-2 group-hover:text-red-400 transition-colors">
                     {featuredArticle.title}
                   </h2>
@@ -180,7 +181,7 @@ export default function Home() {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center mr-3 sm:mr-4 font-bold">
               <Fire className="h-4 w-4 sm:h-5 sm:w-5 mr-1" />
-              <span className="text-sm sm:text-base">Hot News</span>
+              <span className="text-sm sm:text-base">Breaking News</span>
             </div>
             <div className="ticker-container relative w-full">
               <div className="ticker-animation flex items-center">
@@ -208,10 +209,10 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
           {/* Main Content Area */}
           <div className="lg:col-span-8">
-            {/* East Bengal News Section */}
+            {/* Latest News Section */}
             <div className="mb-8 sm:mb-12">
               <div className="flex items-center justify-between mb-4 sm:mb-6">
-                <h2 className="text-xl sm:text-2xl font-bold border-l-4 border-red-700 pl-3">East Bengal</h2>
+                <h2 className="text-xl sm:text-2xl font-bold border-l-4 border-red-700 pl-3">Latest News</h2>
                 <Link
                   href="/news"
                   className="text-red-700 hover:text-red-900 font-medium inline-flex items-center text-sm sm:text-base"
@@ -223,35 +224,35 @@ export default function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="md:col-span-2">
-                  <Link href={`/news/${mohunBaganSection[0].slug}`} className="block group">
+                  <Link href={`/news/${recentArticles[0].slug}`} className="block group">
                     <div className="bg-white rounded-lg shadow-md overflow-hidden">
                       <div className="relative h-48 sm:h-64 w-full">
                         <Image
-                          src={mohunBaganSection[0].image || "/placeholder.svg"}
-                          alt={mohunBaganSection[0].title}
+                          src={recentArticles[0].image || "/placeholder.svg"}
+                          alt={recentArticles[0].title}
                           fill
                           className="object-cover"
                         />
                         <div className="absolute top-0 left-0 bg-red-700 text-white text-xs px-2 py-1 m-3 rounded">
-                          BENGALURU FC
+                          ISL
                         </div>
                       </div>
                       <div className="p-4">
                         <h3 className="text-xl font-bold mb-2 group-hover:text-red-700 transition-colors">
-                          {mohunBaganSection[0].title}
+                          {recentArticles[0].title}
                         </h3>
                         <div className="flex items-center text-sm text-gray-500 mb-2">
-                          <span>{mohunBaganSection[0].author}</span>
+                          <span>{recentArticles[0].author}</span>
                           <span className="mx-2">•</span>
-                          <time dateTime={mohunBaganSection[0].date}>{mohunBaganSection[0].date}</time>
+                          <time dateTime={recentArticles[0].date}>{recentArticles[0].date}</time>
                         </div>
-                        <p className="text-gray-600">{mohunBaganSection[0].excerpt}</p>
+                        <p className="text-gray-600">{recentArticles[0].excerpt}</p>
                       </div>
                     </div>
                   </Link>
                 </div>
 
-                {mohunBaganSection.slice(1).map((article) => (
+                {recentArticles.slice(1).map((article) => (
                   <div key={article.id}>
                     <Link href={`/news/${article.slug}`} className="block group">
                       <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
@@ -278,10 +279,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Indian Football Section */}
+            {/* Match Reports Section */}
             <div className="mb-12">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold border-l-4 border-red-700 pl-3">Match Reports</h2>
+                <h2 className="text-2xl font-bold border-l-4 border-red-700 pl-3">Match Analysis</h2>
                 <Link href="/matches" className="text-red-700 hover:text-red-900 font-medium inline-flex items-center">
                   View all
                   <ArrowRight className="h-4 w-4 ml-1" />
@@ -289,37 +290,101 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {mohunBaganSection.slice(0, 4).map((article) => (
-                  <div key={article.id}>
-                    <Link href={`/matches/${article.slug}`} className="block group">
-                      <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                        <div className="relative h-40 w-full">
-                          <Image
-                            src={article.image || "/placeholder.svg"}
-                            alt={article.title}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div className="p-4">
-                          <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
-                            {article.title}
-                          </h3>
-                          <div className="text-xs text-gray-500">
-                            <time dateTime={article.date}>{article.date}</time>
-                          </div>
+                <div>
+                  <Link href="/matches/east-bengal-vs-mohun-bagan-isl-derby" className="block group">
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                      <div className="relative h-40 w-full">
+                        <Image
+                          src="/images/player-with-trophy-sitting.png"
+                          alt="East Bengal FC 2-1 Mohun Bagan SG: Derby Delight for Red & Gold Brigade"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                          East Bengal FC 2-1 Mohun Bagan SG: Derby Delight for Red & Gold Brigade
+                        </h3>
+                        <div className="text-xs text-gray-500">
+                          <time dateTime="2024-03-10">March 10, 2024</time>
                         </div>
                       </div>
-                    </Link>
-                  </div>
-                ))}
+                    </div>
+                  </Link>
+                </div>
+                <div>
+                  <Link href="/matches/east-bengal-vs-northeast-united-isl" className="block group">
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                      <div className="relative h-40 w-full">
+                        <Image
+                          src="/images/team-photo-white.png"
+                          alt="East Bengal FC 3-2 NorthEast United FC: Cleiton Silva Hat-trick Seals Victory"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                          East Bengal FC 3-2 NorthEast United FC: Cleiton Silva Hat-trick Seals Victory
+                        </h3>
+                        <div className="text-xs text-gray-500">
+                          <time dateTime="2024-02-25">February 25, 2024</time>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <div>
+                  <Link href="/matches/east-bengal-vs-chennaiyin-isl" className="block group">
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                      <div className="relative h-40 w-full">
+                        <Image
+                          src="/images/player-with-trophy.png"
+                          alt="East Bengal FC 1-0 Chennaiyin FC: Nandhakumar's Strike Secures Three Points"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                          East Bengal FC 1-0 Chennaiyin FC: Nandhakumar's Strike Secures Three Points
+                        </h3>
+                        <div className="text-xs text-gray-500">
+                          <time dateTime="2024-02-10">February 10, 2024</time>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <div>
+                  <Link href="/matches/east-bengal-vs-fc-goa-isl" className="block group">
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                      <div className="relative h-40 w-full">
+                        <Image
+                          src="/images/press-conference.png"
+                          alt="East Bengal FC 2-2 FC Goa: Thrilling Draw at Salt Lake Stadium"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                          East Bengal FC 2-2 FC Goa: Thrilling Draw at Salt Lake Stadium
+                        </h3>
+                        <div className="text-xs text-gray-500">
+                          <time dateTime="2024-01-28">January 28, 2024</time>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
 
-            {/* EBBU Specials Section */}
+            {/* Fan Corner Section */}
             <div>
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold border-l-4 border-red-700 pl-3">EBBU Specials</h2>
+                <h2 className="text-2xl font-bold border-l-4 border-red-700 pl-3">Fan Corner</h2>
                 <Link href="/stories" className="text-red-700 hover:text-red-900 font-medium inline-flex items-center">
                   View all
                   <ArrowRight className="h-4 w-4 ml-1" />
@@ -327,39 +392,104 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {mohunBaganSection.slice(0, 4).map((article) => (
-                  <div key={article.id}>
-                    <Link href={`/stories/${article.slug}`} className="block group">
-                      <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                        <div className="relative h-40 w-full">
-                          <Image
-                            src={article.image || "/placeholder.svg"}
-                            alt={article.title}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div className="p-4">
-                          <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
-                            {article.title}
-                          </h3>
-                          <div className="text-xs text-gray-500">
-                            <time dateTime={article.date}>{article.date}</time>
-                          </div>
+                <div>
+                  <Link href="/stories/east-bengal-fan-journey" className="block group">
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                      {/* Update the Fan Corner section images */}
+                      <div className="relative h-40 w-full">
+                        <Image
+                          src="/images/match-action.png"
+                          alt="From Kolkata to Kerala: My Journey as an East Bengal Fan"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                          From Kolkata to Kerala: My Journey as an East Bengal Fan
+                        </h3>
+                        <div className="text-xs text-gray-500">
+                          <time dateTime="2024-04-15">April 15, 2024</time>
                         </div>
                       </div>
-                    </Link>
-                  </div>
-                ))}
+                    </div>
+                  </Link>
+                </div>
+                <div>
+                  <Link href="/stories/derby-day-experience" className="block group">
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                      <div className="relative h-40 w-full">
+                        <Image
+                          src="/images/player-with-trophy.png"
+                          alt="Derby Day: The Ultimate Matchday Experience"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                          Derby Day: The Ultimate Matchday Experience
+                        </h3>
+                        <div className="text-xs text-gray-500">
+                          <time dateTime="2024-03-15">March 15, 2024</time>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <div>
+                  <Link href="/stories/east-bengal-ultras" className="block group">
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                      <div className="relative h-40 w-full">
+                        <Image
+                          src="/images/team-photo-white.png"
+                          alt="Red & Gold Brigade: The Heartbeat of East Bengal FC"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                          Red & Gold Brigade: The Heartbeat of East Bengal FC
+                        </h3>
+                        <div className="text-xs text-gray-500">
+                          <time dateTime="2024-02-20">February 20, 2024</time>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <div>
+                  <Link href="/stories/east-bengal-away-days" className="block group">
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                      <div className="relative h-40 w-full">
+                        <Image
+                          src="/images/press-conference.png"
+                          alt="Away Days: Following East Bengal FC Across India"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-bold mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                          Away Days: Following East Bengal FC Across India
+                        </h3>
+                        <div className="text-xs text-gray-500">
+                          <time dateTime="2024-01-15">January 15, 2024</time>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Sidebar */}
           <div className="lg:col-span-4">
-            {/* Follow Us */}
+            {/* Social Media Stats */}
             <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-              <h3 className="text-lg font-bold mb-4 border-b pb-2">Follow Us</h3>
+              <h3 className="text-lg font-bold mb-4 border-b pb-2">Connect With Us</h3>
               <div className="grid grid-cols-5 gap-2">
                 <a
                   href="#"
@@ -396,7 +526,7 @@ export default function Home() {
 
             {/* Popular Articles */}
             <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-              <h3 className="text-lg font-bold mb-4 border-b pb-2">Popular Articles</h3>
+              <h3 className="text-lg font-bold mb-4 border-b pb-2">Trending Articles</h3>
               <div className="space-y-6">
                 {popularArticles.map((article) => (
                   <Link key={article.id} href={`/${article.category}/${article.slug}`} className="block group">
@@ -418,10 +548,47 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Next Match */}
+            <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+              <h3 className="text-lg font-bold mb-4 border-b pb-2">Next Match</h3>
+              <div className="text-center">
+                <div className="text-sm text-gray-500 mb-3">Calcutta Football League 2024</div>
+                <div className="flex items-center justify-center mb-4">
+                  <div className="text-center">
+                    {/* Update the Next Match section */}
+                    <div className="relative h-16 w-16 mx-auto mb-2">
+                      <Image src="/images/team-photo-field.png" alt="East Bengal FC" fill className="object-contain" />
+                    </div>
+                    <div className="font-bold">East Bengal FC</div>
+                  </div>
+                  <div className="mx-4 text-xl font-bold">vs</div>
+                  <div className="text-center">
+                    <div className="relative h-16 w-16 mx-auto mb-2">
+                      <Image
+                        src="/placeholder.svg?height=64&width=64"
+                        alt="Mohammedan SC"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <div className="font-bold">Mohammedan SC</div>
+                  </div>
+                </div>
+                <div className="text-sm mb-1">July 15, 2024 • 7:00 PM</div>
+                <div className="text-sm mb-4">Kishore Bharati Krirangan, Kolkata</div>
+                <Link
+                  href="/matches/upcoming/east-bengal-vs-mohammedan"
+                  className="inline-block bg-red-700 hover:bg-red-800 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+                >
+                  Match Preview
+                </Link>
+              </div>
+            </div>
+
             {/* Subscribe Box */}
             <div className="bg-gradient-to-r from-red-700 to-red-900 text-white rounded-lg shadow-md p-6 mb-8">
-              <h3 className="text-xl font-bold mb-2">Join the Fan Zone</h3>
-              <p className="mb-4">Connect with fellow supporters and get exclusive content</p>
+              <h3 className="text-xl font-bold mb-2">Join the Red & Gold Army</h3>
+              <p className="mb-4">Get exclusive content and connect with fellow East Bengal supporters</p>
               <form className="space-y-3">
                 <input
                   type="email"

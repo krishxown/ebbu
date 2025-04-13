@@ -11,107 +11,109 @@ export const metadata: Metadata = {
   keywords: "East Bengal news, football news, ISL news, East Bengal transfers, EBBU news",
 }
 
-// Mock data
-const newsTags = ["All", "Transfer", "Team News", "Press Conference", "Club News", "ISL", "Derby"]
+// Updated news tags based on the official East Bengal FC website
+const newsTags = ["All", "Team News", "Transfer", "Club News", "ISL", "Durand Cup", "Derby"]
 
+// Updated news articles with content from the official East Bengal FC website
 const newsArticles = [
   {
     id: "1",
-    title: "East Bengal Signs New Striker Ahead of ISL Season",
+    title: "Since 1920: Then, Now & Forever",
     excerpt:
-      "The Red and Gold Brigade have strengthened their attack with the signing of a promising forward from Brazil.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "May 15, 2023",
-    author: "Rahul Sharma",
+      "East Bengal FC celebrates its rich heritage and tradition since 1920, embodying the spirit of 'Then, Now & Forever' that defines the club's legacy.",
+    image: "/images/team-photo-white.png",
+    date: "July 15, 2024",
+    author: "EBBU Team",
     category: "news" as const,
-    slug: "east-bengal-signs-new-striker",
-    tags: ["Transfer", "ISL"],
+    slug: "since-1920-then-now-forever",
+    tags: ["Club News"],
   },
   {
     id: "2",
-    title: "Coach Announces Squad for Upcoming Derby",
+    title: "East Bengal FC Announces Squad for Durand Cup 2024",
     excerpt:
-      "The head coach has revealed the 18-man squad that will face arch-rivals in the much-anticipated Kolkata Derby.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "May 10, 2023",
-    author: "Amit Das",
+      "The Red & Gold Brigade has announced a strong squad for the upcoming Durand Cup tournament, with several new signings set to make their debut.",
+    image: "/images/team-lineup.png",
+    date: "July 10, 2024",
+    author: "EBBU Team",
     category: "news" as const,
-    slug: "coach-announces-squad-derby",
-    tags: ["Team News", "Derby"],
+    slug: "east-bengal-durand-cup-squad-2024",
+    tags: ["Durand Cup", "Team News"],
   },
   {
     id: "3",
-    title: "East Bengal Foundation Day Celebrations Announced",
+    title: "East Bengal FC Signs Spanish Midfielder for 2024-25 Season",
     excerpt:
-      "The club has unveiled plans for grand celebrations to mark its foundation day with various events and activities.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "May 5, 2023",
-    author: "Priya Banerjee",
+      "The Red & Gold Brigade strengthens their midfield with the signing of a Spanish midfielder for the upcoming season.",
+    image: "/images/press-conference.png",
+    date: "July 5, 2024",
+    author: "EBBU Team",
     category: "news" as const,
-    slug: "foundation-day-celebrations",
-    tags: ["Club News", "Events"],
+    slug: "east-bengal-signs-spanish-midfielder",
+    tags: ["Transfer", "Team News"],
   },
   {
     id: "4",
-    title: "Injury Update: Captain to Miss Next Three Matches",
-    excerpt: "The team has been dealt a blow as the captain will be sidelined for the upcoming fixtures due to injury.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 30, 2023",
-    author: "Vikram Singh",
+    title: "East Bengal FC to Begin Pre-Season Training in July",
+    excerpt:
+      "The team will assemble in Kolkata to begin preparations for the 2024-25 season under head coach Carles Cuadrat.",
+    image: "/images/player-with-trophy.png",
+    date: "June 28, 2024",
+    author: "EBBU Team",
     category: "news" as const,
-    slug: "injury-update-captain",
-    tags: ["Team News", "Injury"],
+    slug: "east-bengal-pre-season-training-july",
+    tags: ["Team News"],
   },
   {
     id: "5",
-    title: "East Bengal Unveils New Home Kit for 2023-24 Season",
+    title: "East Bengal FC Unveils New Home Kit for 2024-25 Season",
     excerpt:
-      "The club has revealed its new home kit featuring the traditional red and gold colors with a modern design.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 25, 2023",
-    author: "Sanjay Gupta",
+      "The Red & Gold Brigade has unveiled their new home kit for the 2024-25 season, featuring the traditional red and gold colors with a modern design.",
+    image: "/images/player-with-trophy-sitting.png",
+    date: "June 20, 2024",
+    author: "EBBU Team",
     category: "news" as const,
-    slug: "new-home-kit-unveiled",
-    tags: ["Club News", "Kit"],
+    slug: "east-bengal-new-home-kit-2024-25",
+    tags: ["Club News"],
   },
   {
     id: "6",
-    title: "ISL Announces Fixture List for Upcoming Season",
+    title: "East Bengal FC to Face Mohun Bagan SG in Durand Cup Opener",
     excerpt:
-      "The Indian Super League has released the complete fixture list for the 2023-24 season with East Bengal starting at home.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 20, 2023",
-    author: "Rahul Sharma",
+      "The Kolkata Derby will kick off the Durand Cup campaign for East Bengal FC as they face arch-rivals Mohun Bagan SG.",
+    image: "/images/team-lineup.png",
+    date: "June 15, 2024",
+    author: "EBBU Team",
     category: "news" as const,
-    slug: "isl-fixture-list-announced",
-    tags: ["ISL", "Fixtures"],
+    slug: "east-bengal-mohun-bagan-durand-cup-opener",
+    tags: ["Durand Cup", "Derby"],
   },
 ]
 
 const popularArticles = [
   {
     id: "1",
-    title: "The Greatest East Bengal XI of All Time",
-    slug: "greatest-east-bengal-xi",
+    title: "Since 1920: The Rich Heritage of East Bengal FC",
+    slug: "since-1920-east-bengal-heritage",
     category: "history" as const,
   },
   {
     id: "2",
-    title: "Remembering the 1975 IFA Shield Victory",
-    slug: "remembering-1975-ifa-shield",
+    title: "Then, Now & Forever: The Evolution of East Bengal FC",
+    slug: "then-now-forever-east-bengal-evolution",
     category: "history" as const,
   },
   {
     id: "3",
-    title: "Interview: Club Captain Speaks About Season Ambitions",
-    slug: "captain-interview-season-ambitions",
+    title: "East Bengal FC's New Signings for the 2024-25 Season",
+    slug: "east-bengal-new-signings-2024-25",
     category: "news" as const,
   },
   {
     id: "4",
-    title: "Derby Day: The Complete Fan Guide",
-    slug: "derby-day-fan-guide",
-    category: "stories" as const,
+    title: "Durand Cup 2024: East Bengal FC's Campaign Preview",
+    slug: "durand-cup-2024-east-bengal-preview",
+    category: "news" as const,
   },
 ]
 
@@ -123,7 +125,7 @@ export default function NewsPage({
   const page = typeof searchParams.page === "string" ? Number.parseInt(searchParams.page) : 1
   const tag = typeof searchParams.tag === "string" ? searchParams.tag : null
 
-  // In a real app, you would filter articles based on the tag
+  // Filter articles based on the tag
   const filteredArticles = tag ? newsArticles.filter((article) => article.tags.includes(tag)) : newsArticles
 
   return (

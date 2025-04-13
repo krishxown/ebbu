@@ -39,7 +39,7 @@ const getArticleData = (category: string, slug: string) => {
       
       <p>With this signing, East Bengal has sent a clear signal of intent for the upcoming season as they look to challenge for honors in both the ISL and domestic cup competitions.</p>
     `,
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/images/press-conference.png",
     date: "May 15, 2023",
     author: "Rahul Sharma",
     tags: ["Transfer", "ISL", "Team News"],
@@ -120,7 +120,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
         <div className="lg:col-span-2">
           <article className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="relative h-80 w-full">
-              <Image src={article.image || "/placeholder.svg"} alt={article.title} fill className="object-cover" />
+              <Image src="/images/match-action.png" alt={article.title} fill className="object-cover" />
             </div>
 
             <div className="p-6">

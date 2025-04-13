@@ -16,7 +16,7 @@ export default function LoginPage() {
         <div className="p-6">
           <div className="text-center mb-6">
             <div className="inline-block relative h-16 w-16 mb-4">
-              <Image src="/placeholder.svg?height=64&width=64" alt="EBBU Logo" fill className="object-contain" />
+              <Image src="/images/ebbu-logo.png" alt="EBBU Logo" fill className="object-contain" />
             </div>
             <h1 className="text-2xl font-bold">Welcome to EBBU</h1>
             <p className="text-gray-600">Sign in to access your account</p>

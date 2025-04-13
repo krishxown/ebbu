@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Facebook, Instagram, Youtube, Twitter, FileText } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Contact Us | EBBU - East Bengal Bangal United",
@@ -96,14 +97,14 @@ export default function ContactPage() {
                 <h3 className="font-bold mb-2">Email</h3>
                 <p className="text-gray-600 mb-4">
                   For general inquiries:{" "}
-                  <a href="mailto:info@ebbu.in" className="text-red-700 hover:text-red-900">
-                    info@ebbu.in
+                  <a href="mailto:contactebbu@gmail.com" className="text-red-700 hover:text-red-900">
+                    contactebbu@gmail.com
                   </a>
                 </p>
                 <p className="text-gray-600">
                   For content submissions:{" "}
-                  <a href="mailto:content@ebbu.in" className="text-red-700 hover:text-red-900">
-                    content@ebbu.in
+                  <a href="mailto:contactebbu@gmail.com" className="text-red-700 hover:text-red-900">
+                    contactebbu@gmail.com
                   </a>
                 </p>
               </div>
@@ -113,18 +114,63 @@ export default function ContactPage() {
                 <p className="text-gray-600 mb-2">You can also reach out to us on our social media channels:</p>
                 <ul className="text-gray-600 space-y-1">
                   <li>
-                    <a href="#" className="text-red-700 hover:text-red-900">
-                      Facebook
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61563127798892"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-700 hover:text-red-900 flex items-center gap-2"
+                    >
+                      <Facebook className="h-4 w-4" /> Facebook
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-red-700 hover:text-red-900">
-                      Twitter
+                    <a
+                      href="https://x.com/ebbu1920"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-700 hover:text-red-900 flex items-center gap-2"
+                    >
+                      <Twitter className="h-4 w-4" /> Twitter/X
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-red-700 hover:text-red-900">
-                      Instagram
+                    <a
+                      href="https://www.instagram.com/ebbu.1920"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-700 hover:text-red-900 flex items-center gap-2"
+                    >
+                      <Instagram className="h-4 w-4" /> Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@ebbu-eastbengalbangalunited"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-700 hover:text-red-900 flex items-center gap-2"
+                    >
+                      <Youtube className="h-4 w-4" /> YouTube
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://medium.com/@ebbu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-700 hover:text-red-900 flex items-center gap-2"
+                    >
+                      <FileText className="h-4 w-4" /> Medium
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://linktr.ee/ebbu1920"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-700 hover:text-red-900"
+                    >
+                      All Social Links (Linktree)
                     </a>
                   </li>
                 </ul>

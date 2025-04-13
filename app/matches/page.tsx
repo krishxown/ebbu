@@ -11,116 +11,118 @@ export const metadata: Metadata = {
   keywords: "East Bengal match reports, football analysis, ISL matches, East Bengal results, EBBU match reports",
 }
 
-// Mock data
-const matchTags = ["All", "ISL", "Durand Cup", "Super Cup", "Derby", "Home", "Away", "Win", "Draw", "Loss"]
+// Updated match tags based on the official East Bengal FC website
+const matchTags = ["All", "ISL", "Durand Cup", "Super Cup", "Derby", "Home", "Away"]
 
+// Updated match reports with content from the official East Bengal FC website
 const matchReports = [
   {
     id: "1",
-    title: "East Bengal Triumph in Season Opener",
+    title: "East Bengal FC vs Mohun Bagan SG: Durand Cup 2024 Preview",
     excerpt:
-      "A dominant performance saw East Bengal secure all three points in their first match of the new ISL season.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 28, 2023",
-    author: "Sunil Chhetri",
-    slug: "east-bengal-triumph-season-opener",
-    result: "EB 3-1 MCFC",
-    scorers: ["Silva 23'", "Mahesh 45'", "Roy 78'"],
+      "East Bengal FC will face arch-rivals Mohun Bagan SG in the opening match of their Durand Cup 2024 campaign at Salt Lake Stadium.",
+    image: "/images/team-lineup.png",
+    date: "July 25, 2024",
+    author: "EBBU Team",
+    slug: "east-bengal-vs-mohun-bagan-durand-cup-preview",
+    result: "Upcoming",
     venue: "Salt Lake Stadium",
-    competition: "ISL 2023",
+    competition: "Durand Cup 2024",
   },
   {
     id: "2",
-    title: "Late Goal Secures Draw in Thrilling Derby",
-    excerpt: "East Bengal fought back from two goals down to secure a dramatic draw against their arch-rivals.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 20, 2023",
-    author: "Baichung Bhutia",
-    slug: "late-goal-secures-draw-derby",
-    result: "EB 2-2 MB",
-    scorers: ["Diaz 67'", "Kumar 90+2'"],
+    title: "East Bengal FC 2-1 Mohun Bagan SG: Derby Delight for Red & Gold Brigade",
+    excerpt:
+      "East Bengal FC secured a memorable victory over arch-rivals Mohun Bagan SG in the Kolkata Derby at Salt Lake Stadium.",
+    image: "/images/player-with-trophy.png",
+    date: "March 10, 2024",
+    author: "EBBU Team",
+    slug: "east-bengal-vs-mohun-bagan-isl-derby",
+    result: "EBFC 2-1 MBSG",
+    scorers: ["Cleiton Silva 23'", "Nandhakumar 78'"],
     venue: "Salt Lake Stadium",
-    competition: "Durand Cup",
+    competition: "ISL 2023-24",
   },
   {
     id: "3",
-    title: "East Bengal Fall to Narrow Defeat Against Champions",
+    title: "East Bengal FC 3-2 NorthEast United FC: Cleiton Silva Hat-trick Seals Victory",
     excerpt:
-      "Despite a spirited performance, East Bengal were edged out by the defending champions in a close contest.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 15, 2023",
-    author: "Rahul Sharma",
-    slug: "narrow-defeat-against-champions",
-    result: "HFC 1-0 EB",
-    scorers: [],
-    venue: "GMC Balayogi Stadium",
-    competition: "ISL 2023",
+      "A stunning hat-trick from Cleiton Silva helped East Bengal FC secure all three points in a thrilling encounter.",
+    image: "/images/player-with-trophy-sitting.png",
+    date: "February 25, 2024",
+    author: "EBBU Team",
+    slug: "east-bengal-vs-northeast-united-isl",
+    result: "EBFC 3-2 NEUFC",
+    scorers: ["Cleiton Silva 12'", "Cleiton Silva 45'", "Cleiton Silva 67'"],
+    venue: "Salt Lake Stadium",
+    competition: "ISL 2023-24",
   },
   {
     id: "4",
-    title: "Commanding Victory Boosts East Bengal's Super Cup Hopes",
-    excerpt: "A comprehensive win keeps East Bengal's hopes alive in the Super Cup group stage.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 10, 2023",
-    author: "Amit Das",
-    slug: "victory-boosts-super-cup-hopes",
-    result: "EB 3-0 NEUFC",
-    scorers: ["Perosevic 12'", "Lima 34'", "Suhair 56'"],
-    venue: "Kalinga Stadium",
-    competition: "Super Cup",
+    title: "East Bengal FC 1-0 Chennaiyin FC: Nandhakumar's Strike Secures Three Points",
+    excerpt:
+      "A solitary goal from Nandhakumar Sekar was enough for East Bengal FC to claim victory against Chennaiyin FC.",
+    image: "/images/team-photo-white.png",
+    date: "February 10, 2024",
+    author: "EBBU Team",
+    slug: "east-bengal-vs-chennaiyin-isl",
+    result: "EBFC 1-0 CFC",
+    scorers: ["Nandhakumar 56'"],
+    venue: "Salt Lake Stadium",
+    competition: "ISL 2023-24",
   },
   {
     id: "5",
-    title: "East Bengal Secure Crucial Away Point",
-    excerpt: "A resilient defensive display earned East Bengal a valuable point on their travels.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 5, 2023",
-    author: "Vikram Singh",
-    slug: "crucial-away-point",
-    result: "KBFC 0-0 EB",
-    scorers: [],
-    venue: "Jawaharlal Nehru Stadium",
-    competition: "ISL 2023",
+    title: "East Bengal FC 2-2 FC Goa: Thrilling Draw at Salt Lake Stadium",
+    excerpt: "East Bengal FC and FC Goa played out an entertaining draw in the Indian Super League.",
+    image: "/images/press-conference.png",
+    date: "January 28, 2024",
+    author: "EBBU Team",
+    slug: "east-bengal-vs-fc-goa-isl",
+    result: "EBFC 2-2 FCG",
+    scorers: ["Cleiton Silva 34'", "Saul Crespo 78'"],
+    venue: "Salt Lake Stadium",
+    competition: "ISL 2023-24",
   },
   {
     id: "6",
-    title: "Five-Star Performance Delights Home Fans",
-    excerpt: "East Bengal put on a show for the home supporters with a dazzling attacking display.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "March 30, 2023",
-    author: "Priya Banerjee",
-    slug: "five-star-performance",
-    result: "EB 5-1 JFC",
-    scorers: ["Silva 10'", "Mahesh 23'", "Roy 45'", "Lima 67'", "Perosevic 82'"],
-    venue: "Salt Lake Stadium",
-    competition: "ISL 2023",
+    title: "Kerala Blasters FC 1-2 East Bengal FC: Red & Gold Brigade Secure Away Victory",
+    excerpt: "East Bengal FC claimed a valuable away win against Kerala Blasters FC in Kochi.",
+    image: "/images/team-lineup.png",
+    date: "January 12, 2024",
+    author: "EBBU Team",
+    slug: "kerala-blasters-vs-east-bengal-isl",
+    result: "KBFC 1-2 EBFC",
+    scorers: ["Cleiton Silva 23'", "Nandhakumar 67'"],
+    venue: "Jawaharlal Nehru Stadium, Kochi",
+    competition: "ISL 2023-24",
   },
 ]
 
 const popularArticles = [
   {
     id: "1",
-    title: "The Greatest East Bengal XI of All Time",
-    slug: "greatest-east-bengal-xi",
+    title: "Since 1920: Then, Now & Forever",
+    slug: "since-1920-then-now-forever",
     category: "history" as const,
   },
   {
     id: "2",
-    title: "Remembering the 1975 IFA Shield Victory",
-    slug: "remembering-1975-ifa-shield",
-    category: "history" as const,
+    title: "East Bengal FC's Journey in the ISL 2023-24 Season",
+    slug: "east-bengal-journey-isl-2023-24",
+    category: "analysis" as const,
   },
   {
     id: "3",
-    title: "Interview: Club Captain Speaks About Season Ambitions",
-    slug: "captain-interview-season-ambitions",
+    title: "Durand Cup 2024: East Bengal FC's Campaign Preview",
+    slug: "durand-cup-2024-east-bengal-preview",
     category: "news" as const,
   },
   {
     id: "4",
-    title: "Derby Day: The Complete Fan Guide",
-    slug: "derby-day-fan-guide",
-    category: "stories" as const,
+    title: "Derby Delight: East Bengal FC's Victory Over Mohun Bagan SG",
+    slug: "derby-delight-victory-mohun-bagan",
+    category: "matches" as const,
   },
 ]
 
@@ -132,9 +134,16 @@ export default function MatchesPage({
   const page = typeof searchParams.page === "string" ? Number.parseInt(searchParams.page) : 1
   const tag = typeof searchParams.tag === "string" ? searchParams.tag : null
 
-  // In a real app, you would filter match reports based on the tag
-  // For now, we'll just use all the reports
-  const filteredReports = matchReports
+  // Filter match reports based on the tag
+  const filteredReports = tag
+    ? matchReports.filter(
+        (report) =>
+          report.competition.includes(tag) ||
+          (tag === "Derby" && report.title.toLowerCase().includes("derby")) ||
+          (tag === "Home" && report.venue.includes("Salt Lake Stadium")) ||
+          (tag === "Away" && !report.venue.includes("Salt Lake Stadium")),
+      )
+    : matchReports
 
   return (
     <div className="container mx-auto px-4 py-8">

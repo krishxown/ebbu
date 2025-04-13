@@ -12,49 +12,49 @@ const menuItems = [
     path: "/news",
     submenu: [
       { title: "Latest News", path: "/news" },
-      { title: "Transfer News", path: "/news?tag=Transfer" },
-      { title: "Team News", path: "/news?tag=Team+News" },
-      { title: "Press Conference", path: "/news?tag=Press+Conference" },
+      { title: "Transfer Updates", path: "/news?tag=Transfer" },
+      { title: "Team Announcements", path: "/news?tag=Team+News" },
+      { title: "Press Conferences", path: "/news?tag=Press+Conference" },
     ],
   },
   {
-    title: "Match Reports",
+    title: "Match Center",
     path: "/matches",
     submenu: [
       { title: "All Matches", path: "/matches" },
-      { title: "ISL", path: "/matches?tag=ISL" },
+      { title: "ISL Fixtures", path: "/matches?tag=ISL" },
       { title: "Durand Cup", path: "/matches?tag=Durand+Cup" },
       { title: "Super Cup", path: "/matches?tag=Super+Cup" },
     ],
   },
   {
-    title: "EBBU Specials",
+    title: "Fan Zone",
     path: "/stories",
     submenu: [
       { title: "Fan Stories", path: "/stories" },
-      { title: "Matchday Experience", path: "/stories?tag=Matchday+Experience" },
-      { title: "Opinion", path: "/stories?tag=Opinion" },
-      { title: "Fan Culture", path: "/stories?tag=Fan+Culture" },
+      { title: "Matchday Experiences", path: "/stories?tag=Matchday+Experience" },
+      { title: "Opinion Pieces", path: "/stories?tag=Opinion" },
+      { title: "Red & Gold Culture", path: "/stories?tag=Fan+Culture" },
     ],
   },
   {
     title: "East Bengalopedia",
     path: "/east-bengalopedia",
     submenu: [
-      { title: "Why East Bengal?", path: "/east-bengalopedia/why-east-bengal" },
+      { title: "Club Origins", path: "/east-bengalopedia/why-east-bengal" },
       { title: "Trophy Cabinet", path: "/east-bengalopedia/trophy-cabinet" },
       { title: "Notable Players", path: "/east-bengalopedia/notable-players" },
       { title: "Historical Seasons", path: "/east-bengalopedia/historical-seasons" },
     ],
   },
   {
-    title: "History",
+    title: "Heritage",
     path: "/history",
     submenu: [
-      { title: "Timeline", path: "/history" },
-      { title: "Legends", path: "/history/legends" },
-      { title: "Glory Years", path: "/history/glory-years" },
-      { title: "Derby History", path: "/history/derby-history" },
+      { title: "Club Timeline", path: "/history" },
+      { title: "Hall of Fame", path: "/history/legends" },
+      { title: "Golden Era", path: "/history/glory-years" },
+      { title: "Derby Classics", path: "/history/derby-history" },
     ],
   },
 ]
@@ -109,7 +109,7 @@ export default function Header() {
             {/* Logo - Left side */}
             <Link href="/" className="flex items-center space-x-2 py-3">
               <div className="relative h-8 w-8 sm:h-10 sm:w-10">
-                <Image src="/placeholder.svg?height=40&width=40" alt="EBBU Logo" fill className="object-contain" />
+                <Image src="/images/ebbu-logo.png" alt="EBBU Logo" fill className="object-contain" />
               </div>
               <span className="text-lg sm:text-xl font-bold text-red-700">EBBU.in</span>
             </Link>

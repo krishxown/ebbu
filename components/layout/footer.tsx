@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Youtube, Twitter, Send } from "lucide-react"
+import { Facebook, Instagram, Youtube, Twitter, Send, FileText } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -12,56 +12,81 @@ export default function Footer() {
             <div className="col-span-2 sm:col-span-2 md:col-span-1">
               <div className="flex items-center mb-4">
                 <div className="relative h-8 w-8 sm:h-10 sm:w-10 mr-2">
-                  <Image src="/placeholder.svg?height=40&width=40" alt="EBBU Logo" fill className="object-contain" />
+                  <Image src="/images/ebbu-logo.png" alt="EBBU Logo" fill className="object-contain" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold">EBBU.in</h3>
               </div>
               <p className="text-gray-400 mb-4">Home of the Red & Gold Faithful</p>
               <div className="flex space-x-3">
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61563127798892"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
                   <Facebook className="h-5 w-5" />
                   <span className="sr-only">Facebook</span>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <a
+                  href="https://www.instagram.com/ebbu.1920"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <a
+                  href="https://www.youtube.com/@ebbu-eastbengalbangalunited"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
                   <Youtube className="h-5 w-5" />
                   <span className="sr-only">YouTube</span>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <a
+                  href="https://x.com/ebbu1920"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
                   <Twitter className="h-5 w-5" />
                   <span className="sr-only">Twitter</span>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  <Send className="h-5 w-5" />
-                  <span className="sr-only">Telegram</span>
+                <a
+                  href="https://medium.com/@ebbu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
+                  <FileText className="h-5 w-5" />
+                  <span className="sr-only">Medium</span>
                 </a>
               </div>
             </div>
 
             <div>
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Quick Links</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Navigation</h3>
               <ul className="space-y-1 sm:space-y-2">
                 <li>
                   <Link href="/news" className="text-gray-400 hover:text-white transition text-sm sm:text-base">
-                    News
+                    Latest News
                   </Link>
                 </li>
                 <li>
                   <Link href="/matches" className="text-gray-400 hover:text-white transition text-sm sm:text-base">
-                    Match Reports
+                    Match Center
                   </Link>
                 </li>
                 <li>
                   <Link href="/stories" className="text-gray-400 hover:text-white transition text-sm sm:text-base">
-                    Stories
+                    Fan Zone
                   </Link>
                 </li>
                 <li>
                   <Link href="/history" className="text-gray-400 hover:text-white transition text-sm sm:text-base">
-                    History
+                    Club Heritage
                   </Link>
                 </li>
                 <li>
@@ -76,11 +101,11 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">About</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">About EBBU</h3>
               <ul className="space-y-1 sm:space-y-2">
                 <li>
                   <Link href="/about" className="text-gray-400 hover:text-white transition text-sm sm:text-base">
-                    About Us
+                    Our Story
                   </Link>
                 </li>
                 <li>
@@ -101,12 +126,24 @@ export default function Footer() {
                     Privacy Policy
                   </Link>
                 </li>
+                <li>
+                  <a
+                    href="https://linktr.ee/ebbu1920"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition text-sm sm:text-base"
+                  >
+                    All Social Links
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div className="col-span-2 sm:col-span-2 md:col-span-1">
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Subscribe</h3>
-              <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base">Get the latest news and updates</p>
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Newsletter</h3>
+              <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base">
+                Stay updated with the Red & Gold Brigade
+              </p>
               <form className="flex">
                 <input
                   type="email"

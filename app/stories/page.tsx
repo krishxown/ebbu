@@ -11,96 +11,97 @@ export const metadata: Metadata = {
   keywords: "East Bengal stories, fan experiences, matchday stories, football culture, EBBU stories",
 }
 
-// Mock data
-const storyTags = ["All", "Fan Voice", "Matchday Experience", "Opinion", "Fan Culture", "Community", "History"]
+// Updated story tags based on the official East Bengal FC website theme
+const storyTags = ["All", "Fan Voice", "Club Heritage", "Matchday Experience", "Opinion", "Fan Culture", "History"]
 
+// Updated stories with content inspired by the official East Bengal FC website
 const stories = [
   {
     id: "1",
-    title: "The Ultras: Inside East Bengal's Most Passionate Fan Group",
-    excerpt: "We go behind the scenes with the dedicated supporters who bring the stadium to life every match day.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 15, 2023",
-    author: "Ravi Kumar",
+    title: "Since 1920: The Legacy of East Bengal FC",
+    excerpt: "Exploring the rich heritage and tradition of East Bengal FC since its founding in 1920.",
+    image: "/images/team-photo-white.png",
+    date: "July 15, 2024",
+    author: "EBBU Team",
     category: "stories" as const,
-    slug: "ultras-passionate-fan-group",
-    tags: ["Fan Culture", "Matchday"],
+    slug: "since-1920-legacy-east-bengal",
+    tags: ["Club Heritage", "History"],
   },
   {
     id: "2",
-    title: "From Kolkata to Kerala: The Growing Fan Base",
-    excerpt: "How East Bengal's support has expanded beyond its traditional stronghold to new regions of India.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 10, 2023",
-    author: "Maya Desai",
+    title: "Then, Now & Forever: The Evolution of East Bengal FC",
+    excerpt: "How East Bengal FC has evolved over the decades while maintaining its core identity and values.",
+    image: "/images/player-with-trophy.png",
+    date: "July 10, 2024",
+    author: "EBBU Team",
     category: "stories" as const,
-    slug: "kolkata-to-kerala-growing-fan-base",
-    tags: ["Fan Culture", "Community"],
+    slug: "then-now-forever-evolution",
+    tags: ["Club Heritage", "History"],
   },
   {
     id: "3",
+    title: "The Ultras: Inside East Bengal's Most Passionate Fan Group",
+    excerpt: "We go behind the scenes with the dedicated supporters who bring the stadium to life every match day.",
+    image: "/images/team-lineup.png",
+    date: "July 5, 2024",
+    author: "Ravi Kumar",
+    category: "stories" as const,
+    slug: "ultras-passionate-fan-group",
+    tags: ["Fan Culture", "Matchday Experience"],
+  },
+  {
+    id: "4",
     title: "My First Derby: A Fan's Perspective",
     excerpt: "A first-hand account of experiencing the electric atmosphere of the Kolkata Derby for the first time.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "April 5, 2023",
+    image: "/images/press-conference.png",
+    date: "June 30, 2024",
     author: "Arjun Mehta",
     category: "stories" as const,
     slug: "my-first-derby-perspective",
     tags: ["Fan Voice", "Matchday Experience", "Derby"],
   },
   {
-    id: "4",
-    title: "Opinion: Three Changes East Bengal Need to Make",
-    excerpt: "An analysis of what the team needs to do differently to challenge for honors in the upcoming season.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "March 30, 2023",
-    author: "Sunil Chhetri",
-    category: "stories" as const,
-    slug: "opinion-three-changes-needed",
-    tags: ["Opinion", "Analysis"],
-  },
-  {
     id: "5",
-    title: "The Red and Gold Family: How Football Brings Us Together",
-    excerpt: "Stories of friendships and bonds formed through a shared love for East Bengal FC.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "March 25, 2023",
-    author: "Priya Banerjee",
+    title: "From Kolkata to Kerala: The Growing Fan Base",
+    excerpt: "How East Bengal's support has expanded beyond its traditional stronghold to new regions of India.",
+    image: "/images/player-with-trophy-sitting.png",
+    date: "June 25, 2024",
+    author: "Maya Desai",
     category: "stories" as const,
-    slug: "red-gold-family-brings-together",
-    tags: ["Fan Culture", "Community"],
+    slug: "kolkata-to-kerala-growing-fan-base",
+    tags: ["Fan Culture", "Fan Voice"],
   },
   {
     id: "6",
-    title: "Away Days: Following East Bengal Across India",
-    excerpt: "The adventures and experiences of traveling supporters who follow the team wherever they play.",
-    image: "/placeholder.svg?height=200&width=400",
-    date: "March 20, 2023",
-    author: "Rahul Sharma",
+    title: "The Red and Gold Family: How Football Brings Us Together",
+    excerpt: "Stories of friendships and bonds formed through a shared love for East Bengal FC.",
+    image: "/images/team-lineup.png",
+    date: "June 20, 2024",
+    author: "Priya Banerjee",
     category: "stories" as const,
-    slug: "away-days-following-across-india",
-    tags: ["Fan Voice", "Matchday Experience"],
+    slug: "red-gold-family-brings-together",
+    tags: ["Fan Culture", "Fan Voice"],
   },
 ]
 
 const popularArticles = [
   {
     id: "1",
+    title: "Since 1920: Then, Now & Forever",
+    slug: "since-1920-then-now-forever",
+    category: "history" as const,
+  },
+  {
+    id: "2",
     title: "The Greatest East Bengal XI of All Time",
     slug: "greatest-east-bengal-xi",
     category: "history" as const,
   },
   {
-    id: "2",
+    id: "3",
     title: "Remembering the 1975 IFA Shield Victory",
     slug: "remembering-1975-ifa-shield",
     category: "history" as const,
-  },
-  {
-    id: "3",
-    title: "Interview: Club Captain Speaks About Season Ambitions",
-    slug: "captain-interview-season-ambitions",
-    category: "news" as const,
   },
   {
     id: "4",
@@ -118,7 +119,7 @@ export default function StoriesPage({
   const page = typeof searchParams.page === "string" ? Number.parseInt(searchParams.page) : 1
   const tag = typeof searchParams.tag === "string" ? searchParams.tag : null
 
-  // In a real app, you would filter stories based on the tag
+  // Filter stories based on the tag
   const filteredStories = tag ? stories.filter((story) => story.tags.includes(tag)) : stories
 
   return (
